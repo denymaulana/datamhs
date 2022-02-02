@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<!-- saved from url=(0047)http://localhost/phpdasar/pertemuan21/index.php -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+	<title>Halaman Admin</title>
+    
+    <style>
+    .loader {
+        width: 50px;
+        position: absolute;
+        top: 140px;
+        left: 400px;
+        z-index: -1;
+        display: none;
+    }
+    </style>
+    
+    <script src="./Halaman Admin_files/jquery-3.4.1.min.js.download"></script>
+    <script src="./Halaman Admin_files/script.js.download"></script>
+</head>
+
+<body>
+
+<a href="http://localhost/phpdasar/pertemuan21/logout.php"> Logout </a>
+
+<h1>Daftar Mahasiswa</h1>
+
+<a href="http://localhost/phpdasar/pertemuan21/tambah.php"> Tambah Data Mahasiswa  </a>
+<br><br>
+
+
+<!-- post datanya untuk tidak tampil & get akan tampil -->
+<!-- kalau action masih di tempat sama atau di index maka di kosongkan saja jika ada di tempat lain maka diisi -->
+<form action="http://localhost/phpdasar/pertemuan21/index.php" method="post">
+
+<input type="text" name="keyword" size="50" autofocus="" placeholder="masukkan keyword pencarian.." autocomplete="off" id="keyword">
+<button type="submit" name="cari" id="tombol-cari" style="display: none;"> Cari </button>
+
+<img src="./Halaman Admin_files/loader.gif" class="loader">
+
+</form>
+
+
+<br>
+<div id="container">
+<table border="1" cellpadding="10" cellspacing="0">
+ 
+ <tbody><tr> 
+ <th>No.</th>
+ <th>Aksi</th>
+ <th>Gambar</th>
+ <th>NIM</th>
+ <th>Nama</th>
+ <th>Email</th>
+ <th>Jurusan</th>
+ </tr>
+
+   <!--  while ($row = mysqli_fetch_assoc($result) ) :  -->
+<tr>
+    <td>1</td>
+    <td>
+        <a href="http://localhost/phpdasar/pertemuan21/ubah.php?id=3">ubah</a> |
+        <a href="http://localhost/phpdasar/pertemuan21/hapus.php?id=3" onclick=" return confirm(&#39;yakin&#39;);">hapus</a>
+    </td>
+
+    <td>
+        <img src="./Halaman Admin_files/b.jpg" width="50">
+    </td>
+    <td>123456</td>
+    <td>Maulana</td>
+    <td>maulana@gmail.com</td>
+    <td>Teknik Informatika</td>
+</tr>
+ <!--  while ($row = mysqli_fetch_assoc($result) ) :  -->
+<tr>
+    <td>2</td>
+    <td>
+        <a href="http://localhost/phpdasar/pertemuan21/ubah.php?id=15">ubah</a> |
+        <a href="http://localhost/phpdasar/pertemuan21/hapus.php?id=15" onclick=" return confirm(&#39;yakin&#39;);">hapus</a>
+    </td>
+
+    <td>
+        <img src="./Halaman Admin_files/5d78989c2893f.jpg" width="50">
+    </td>
+    <td>12345</td>
+    <td>kaka</td>
+    <td>kaka@gmail.com</td>
+    <td>Teknik Mesin</td>
+</tr>
+ <!--  while ($row = mysqli_fetch_assoc($result) ) :  -->
+<tr>
+    <td>3</td>
+    <td>
+        <a href="http://localhost/phpdasar/pertemuan21/ubah.php?id=16">ubah</a> |
+        <a href="http://localhost/phpdasar/pertemuan21/hapus.php?id=16" onclick=" return confirm(&#39;yakin&#39;);">hapus</a>
+    </td>
+
+    <td>
+        <img src="./Halaman Admin_files/5d7898c5c5f3f.jpg" width="50">
+    </td>
+    <td>54321</td>
+    <td>Nur</td>
+    <td>Nur@gmail.con</td>
+    <td>Teknik Informatika</td>
+</tr>
+ <!--  while ($row = mysqli_fetch_assoc($result) ) :  -->
+<tr>
+    <td>4</td>
+    <td>
+        <a href="http://localhost/phpdasar/pertemuan21/ubah.php?id=17">ubah</a> |
+        <a href="http://localhost/phpdasar/pertemuan21/hapus.php?id=17" onclick=" return confirm(&#39;yakin&#39;);">hapus</a>
+    </td>
+
+    <td>
+        <img src="./Halaman Admin_files/5d7898f0b780d.jpg" width="50">
+    </td>
+    <td>09876</td>
+    <td>bagus</td>
+    <td>bagus@mhs.ac.id</td>
+    <td>Teknik Nuklir</td>
+</tr>
+ <!--  while ($row = mysqli_fetch_assoc($result) ) :  -->
+<tr>
+    <td>5</td>
+    <td>
+        <a href="http://localhost/phpdasar/pertemuan21/ubah.php?id=18">ubah</a> |
+        <a href="http://localhost/phpdasar/pertemuan21/hapus.php?id=18" onclick=" return confirm(&#39;yakin&#39;);">hapus</a>
+    </td>
+
+    <td>
+        <img src="./Halaman Admin_files/5d7899101601f.jpg" width="50">
+    </td>
+    <td>67890</td>
+    <td>Khan</td>
+    <td>khan@mhs.ac.id</td>
+    <td>Teknik Elektro</td>
+</tr>
+ <!--  while ($row = mysqli_fetch_assoc($result) ) :  -->
+<tr>
+    <td>6</td>
+    <td>
+        <a href="http://localhost/phpdasar/pertemuan21/ubah.php?id=19">ubah</a> |
+        <a href="http://localhost/phpdasar/pertemuan21/hapus.php?id=19" onclick=" return confirm(&#39;yakin&#39;);">hapus</a>
+    </td>
+
+    <td>
+        <img src="./Halaman Admin_files/5d79f876f293a.jpg" width="50">
+    </td>
+    <td>17416255</td>
+    <td>Deny Maulana</td>
+    <td>denymaulana@mhs.ac.id</td>
+    <td>Teknik Informatika</td>
+</tr>
+
+</tbody></table>
+</div>
+
+
+</body></html>
